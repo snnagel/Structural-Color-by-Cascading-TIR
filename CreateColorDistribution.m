@@ -29,7 +29,7 @@ outMap=Intensity_3D(wavelengths, thetaOut, phiOut, R, CA, inputAngle, n1, n2);
 
 C=IntensityToColor(wavelengths, outMap);
 %image(C);
- 
+
 C_sphere=sphericalProjection( C, thetaOut, phiOut );
  
 

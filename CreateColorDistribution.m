@@ -37,7 +37,7 @@ C_sphere=sphericalProjection( C, thetaOut, phiOut );
 figure
 image([-1, 1], [-1, 1], C_sphere)
 hold on
-title([num2str(inputAngle), '^o,    R:', num2str(R), '\mu m  \eta: ', num2str(CA), '^o' ])
+title(['\theta:', num2str(inputAngle), '^o,    R:', num2str(R), '\mu m  \eta: ', num2str(CA), '^o' ])
 axis image
 axis off
 

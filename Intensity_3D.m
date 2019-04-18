@@ -79,7 +79,7 @@ minAngle=asin(n2/n1);
         alpha=pi/2-(pi-betai+betao)/(2*M);
  
         cosi=cos(alpha);
-        sint=asin(n1/n2*sin(alpha));
+        sint=n1/n2*sin(alpha);
         cost=sqrt(1-sint.^2);
         rs=(n1*cosi-n2*cost)./(n1*cosi+n2*cost);
         rp=(n2*cosi-n1*cost)./(n2*cosi+n1*cost); 
@@ -102,7 +102,7 @@ minAngle=asin(n2/n1);
         for M=mMin:1:mMax
         alpha=pi/2-(pi-betai+betao)/(2*M);
         cosi=cos(alpha);
-        sint=asin(n1/n2*sin(alpha));
+        sint=n1/n2*sin(alpha);
         cost=sqrt(1-sint.^2);
         rs=(n1*cosi-n2*cost)./(n1*cosi+n2*cost);
         rp=(n2*cosi-n1*cost)./(n2*cosi+n1*cost);

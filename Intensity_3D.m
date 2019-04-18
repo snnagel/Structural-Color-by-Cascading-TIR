@@ -87,8 +87,8 @@ minAngle=asin(n2/n1);
         cAmpTM=rp.^M;
         cAmpTE=rs.^M;
         l=2*M*R*cos(alpha);
-        AmpFtm(jj, ii, kk)=AmpFtm(jj, ii, kk)+(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTM;
-        AmpFte(jj, ii, kk)=AmpFte(jj, ii, kk)+(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTE;
+        AmpFtm(jj, ii, kk)=AmpFtm(jj, ii, kk)+sqrt(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTM;
+        AmpFte(jj, ii, kk)=AmpFte(jj, ii, kk)+sqrt(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTE;
          
         end
         
@@ -112,8 +112,8 @@ minAngle=asin(n2/n1);
         cAmpTM=rp.^M;
         cAmpTE=rs.^M;
         l=2*M*R*cos(alpha);
-        AmpRtm(jj, ii, kk)=AmpRtm(jj, ii, kk)+(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTM;
-        AmpRte(jj, ii, kk)=AmpRte(jj, ii, kk)+(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTE;
+        AmpRtm(jj, ii, kk)=AmpRtm(jj, ii, kk)+sqrt(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTM;
+        AmpRte(jj, ii, kk)=AmpRte(jj, ii, kk)+sqrt(cos(alpha)/M)*exp(1i*2*pi*n1*l/lambda)*cAmpTE;
         end
         end 
      end
